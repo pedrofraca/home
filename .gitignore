@@ -1,0 +1,32 @@
+.CFUserTextEncoding
+.DS_Store
+.Trash/
+.android/
+.appcfg_cookies
+.appcfg_nag
+.bash_history
+#	.bash_profile
+.dropbox/
+#.emacs
+.emacs.d/
+#	.gitconfig
+.kettle/
+.nchsoftware/
+.pentaho/
+.python-eggs/
+.ssh/
+.swt/
+.viminfo
+Desktop/
+Documents/
+Downloads/
+Dropbox/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+android-ndk-r8b/
+android-sdk-macosx/
+#	emacs_loadpath/
+google_appengine
