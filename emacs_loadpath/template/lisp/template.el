@@ -519,6 +519,7 @@ templates, i\.e\., just searches in `template-default-directories'."
   (cons (if (and (not (file-directory-p "~/.templates/"))
 		 (file-directory-p "~/lib/templates"))
 	    (expand-file-name "~/lib/templates/")
+	  (expand-file-name "~/emacs_templates/")
 	  (expand-file-name "~/.templates/"))
 	(and (fboundp 'locate-data-directory)
 	     (let ((dir (locate-data-directory "template")))
