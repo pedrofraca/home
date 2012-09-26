@@ -10,6 +10,8 @@
 (custom-set-variables '(load-home-init-file t t))
 (set-face-attribute 'default nil :height 160)
 
+(tool-bar-mode -1)
+
 (add-to-list 'load-path "~/emacs_loadpath/")
 
 (require 'template)
