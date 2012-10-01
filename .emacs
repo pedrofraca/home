@@ -9,7 +9,7 @@
 (set-cursor-color "#ff0000")
 (custom-set-variables '(load-home-init-file t t))
 (set-face-attribute 'default nil :height 160)
-
+(set-default-font "Source Code Pro")
 (add-to-list 'exec-path "/usr/bin")
 (add-to-list 'exec-path "/usr/local/bin")
 
@@ -18,6 +18,8 @@
 (add-to-list 'load-path "~/emacs_loadpath") 
 (add-to-list 'load-path py-install-directory)
 
+(require 'pymacs)
+(pymacs-load "ropemacs" "rope-")
 
 (require 'python-mode)
 (require 'flymake)
