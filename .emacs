@@ -26,6 +26,12 @@
 (require 'template)
 (require 'move)
 
+(load-file "~/emacs_loadpath/cedet-1.1/common/cedet.el")
+(global-ede-mode 1)                      ; Enable the Project management system
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
+;;(define-key your-mode-map-here "." 'semantic-complete-self-insert)
+
 (when (load "flymake" t) 
   (defun flymake-pyflakes-init () 
     (let* ((temp-file (flymake-init-create-temp-buffer-copy 

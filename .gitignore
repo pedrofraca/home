@@ -2,14 +2,17 @@
 .DS_Store
 .Trash/
 .android/
+.pentaho-meta/
 .appcfg_cookies
 .appcfg_nag
 .bash_history
-#	.bash_profile
+.schemaWorkbench/
+.semanticdb/
+.srecode/
+.subversion/
+.bash_profile
 .dropbox/
-#.emacs
 .emacs.d/
-#	.gitconfig
 .kettle/
 .nchsoftware/
 .pentaho/
@@ -28,5 +31,4 @@ Pictures/
 Public/
 android-ndk-r8b/
 android-sdk-macosx/
-#	emacs_loadpath/
 google_appengine
