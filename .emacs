@@ -1,4 +1,4 @@
-;; Pedro Fraca <pedro.fraca@gmail.com> .emacs file
+; Pedro Fraca <pedro.fraca@gmail.com> .emacs file
 
 ;;Left Option as Meta, right-Option as Alt
 (setq mac-option-key-is-meta t)
@@ -14,37 +14,10 @@
 (add-to-list 'exec-path "/usr/local/bin")
 
 (tool-bar-mode -1)
-(setq py-install-directory "~/emacs_loadpath/python-mode")
-(add-to-list 'load-path "~/emacs_loadpath") 
-(add-to-list 'load-path py-install-directory)
 
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
+(add-to-list 'load-path "~/emacs_loadpath")
 
-(require 'python-mode)
-(require 'flymake)
 (require 'template)
-(require 'move)
-
-(load-file "~/emacs_loadpath/cedet-1.1/common/cedet.el")
-(global-ede-mode 1)                      ; Enable the Project management system
-(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)            ; Enable template insertion menu
-;;(define-key your-mode-map-here "." 'semantic-complete-self-insert)
-
-(when (load "flymake" t) 
-  (defun flymake-pyflakes-init () 
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy 
-		       'flymake-create-temp-inplace)) 
-	   (local-file (file-relative-name 
-			temp-file 
-			(file-name-directory buffer-file-name)))) 
-      (list "pyflakes" (list local-file)))) 
-  
-  (add-to-list 'flymake-allowed-file-name-masks 
-	       '("\\.py\\'" flymake-pyflakes-init))) 
-
-(add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;;Key Binding
 (global-set-key (kbd "M-<up>") 'move-line-up)
